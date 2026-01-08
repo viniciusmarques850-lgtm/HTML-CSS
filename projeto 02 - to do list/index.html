@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="p-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>To-do List</h1>
+
+        <!--Formulario para adicionar tarefa-->
+        <form id="task-form" aria-label="Formulario para adicionar">
+           <input type="text" id="task-input" placeholder="Adicione uma nova tarefa..." autocomplete="off" />
+            <button type="submit" id="add-btn">Adicionar</button>
+        </form> 
+
+        <!--Contador e Ações-->
+        <div class="controls" >
+            <p id="task-count">0 tarefas</p>
+            <button id="clear-btn" class="secondary">Limpar concluidas</button>
+        </div>
+
+        <ul id="task-list" class="task-list" aria-live="polite"></ul>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+
+        .menu {
+  background: #49a0468f;
+  padding: 10px 0;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  transition: 0.3s;
+  padding: 5px 10px;
+}
+
+.menu a:hover {
+  color: #ffcc00; /* muda cor no hover */
+}
+
+/*item ativo*/
+.menu a.active {
+  color: #ffcc00;
+  border-bottom: 2px solid #ffcc00;
+}
+
+    :root{
+  --verde: #49a046;
+  --verde-claro: #49a0468f;
+  --dourado: #ffcc00;
+  --texto: #222;
+  --bg: #e6f6e8;
+}
+
+/* reset simples */
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: 'Arial', sans-serif;
+  background: var(--verde-claro); /* fundo verde do site */
+  color: var(--texto);
+  line-height:1.6;
+}
+
+/* container centralizado com largura fixa responsiva */
+.container{
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+/* topo com título */
+.topo{
+  padding: 24px 0 10px;
+  text-align:center;
+  color:#fff;
+}
+.topo h1{ margin:0; font-size:28px; letter-spacing:2px; }
+.topo .subtitulo{ margin:6px 0 0; font-size:14px; opacity:0.95; }
+
+/* menu (ajuste as cores conforme o modelo) */
+.menu{
+  background: #0f3d2b; /* tom mais escuro sob o topo */
+}
+.menu ul{
+  display:flex;
+  gap:30px;
+  list-style:none;
+  padding:10px 0;
+  margin:0;
+  justify-content:center;
+}
+.menu a{
+  color:#fff;
+  text-decoration:none;
+  padding:8px 10px;
+  display:inline-block;
+  transition: all .22s ease;
+}
+.menu a:hover{ color: var(--dourado); transform:translateY(-2px); }
+.menu a.active{ color:var(--dourado); border-bottom:3px solid var(--dourado); }
+
+/* cartão de conteúdo (caixa branca) */
+.card{
+  background:#fff;
+  margin: 28px 0;
+  padding: 22px;
+  border-radius:8px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+/* imagens responsivas dentro do conteúdo */
+.card img{
+  max-width:100%;
+  height:auto;
+  display:block;
+  margin: 12px auto;
+  border-radius:6px;
+}
+
+/* títulos e listas */
+.card h2,h3,h4{ color: #0b3a22; margin-top:18px; }
+.card p{ margin:10px 0; color:#333; font-size:15px; }
+
+/* iframe/video responsivo */
+.video-wrapper{
+  position:relative;
+  padding-top:56.25%;
+  margin:12px 0;
+}
+.video-wrapper iframe{
+  position:absolute;
+  top:0; left:0;
+  width:100%;
+  height:100%;
+  border:0;
+}
+
+/* rodapé simples */
+.rodape{ text-align:center; color:#fff; padding:18px 0; font-size:13px; }

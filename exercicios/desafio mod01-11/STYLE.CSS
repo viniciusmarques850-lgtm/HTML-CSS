@@ -1,0 +1,25 @@
+body {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #d1930c;
+}
+
+a {
+    display: inline-block;
+    margin: 10px;
+}
+
+img {
+    width: 250px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
