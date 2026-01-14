@@ -53,24 +53,39 @@ header {
 
 .categories {
 
-    background: var(--light);
-    padding: 12px 16px;
+    background: var(--primary);
+    padding: 12px 24px;
 }
 
 .categories ul {
 
     display:flex ;
-    gap: 16px;
+    gap: 24px;
     list-style: none;
-    overflow-x:auto ;
-    transition: 0.3s;
+    
 }
-
+       /*ITENS*/
 .categories li {
 
+    color: var(--light);
     font-size: 14px;
-    white-space: nowrap;
     cursor: pointer;
+
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.categories li:hover {
+    transform: scale(1.12);
+    opacity: 1;
+}
+
+/* ITENS NÃO HOVER */
+.categories ul:hover li {
+    opacity: 0.6;
+}
+
+.categories ul:hover li:hover {
+    opacity: 1;
 }
 
 .products {
